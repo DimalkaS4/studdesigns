@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>STUD Designs — Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="container">
+        <div class="desktop-bar">
+          <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+          </a>
+          <nav class="nav-desktop" aria-label="Primary" style="display:flex;align-items:center;gap:1rem">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="men.html">Men</a>
+            <a class="nav-link" href="women.html">Women</a>
+            <a class="nav-link" href="size-guide.html">Size Guide</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+          </nav>
+        </div>
+        <div class="mobile-bar">
+          <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+          </a>
+          <div style="display:flex;align-items:center;gap:.5rem">
+            <button id="mobile-toggle" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-navigation" aria-expanded="false">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <nav id="mobile-navigation" class="nav-mobile" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="men.html">Men</a>
+          <a class="nav-link" href="women.html">Women</a>
+          <a class="nav-link" href="size-guide.html">Size Guide</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page container">
+        <div style="text-align:center">
+          <h2 class="reveal">Connect With Us Directly</h2>
+          <p style="color:var(--color-secondary)">Choose your preferred channel below for quick assistance.</p>
+
+          <div class="contact-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:1.5rem">
+            <!-- Row 1: WhatsApp | Call -->
+            <a class="card reveal" href="https://wa.me/94760307308" target="_blank" aria-label="WhatsApp chat" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fab fa-whatsapp" style="font-size:2rem;color:#fff;background:#25D366;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">WhatsApp</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Fastest response line for sizing & availability.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">+94 760307308</p>
+            </a>
+            <a class="card reveal" href="tel:+94760307308" aria-label="Phone call" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fas fa-phone" style="font-size:2rem;color:#fff;background:#ef4444;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">Call</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Direct voice support for urgent order queries.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">+94 760307308</p>
+            </a>
+            <!-- Row 2: Instagram | Email -->
+            <a class="card reveal" href="https://instagram.com/studdesigns_official" target="_blank" aria-label="Instagram DM" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fab fa-instagram" style="font-size:2rem;color:#fff;background:#C13584;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">Instagram</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Drop previews, story updates & style guidance.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">@studdesigns_official</p>
+            </a>
+            <a class="card reveal" href="mailto:designsstud@gmail.com" aria-label="Email" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fas fa-envelope" style="font-size:2rem;color:#fff;background:#6B7280;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">Email</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Formal orders & document exchange.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">designsstud@gmail.com</p>
+            </a>
+            <!-- Row 3: Facebook | LinkedIn -->
+            <a class="card reveal" href="https://www.facebook.com/share/16g4NvEaer/" target="_blank" aria-label="Facebook page" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fab fa-facebook-f" style="font-size:2rem;color:#fff;background:#1877F2;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">Facebook</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Community posts and long-form announcements.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">Follow & message</p>
+            </a>
+            <a class="card reveal" href="https://linkedin.com/company/studdesigns" target="_blank" aria-label="LinkedIn" style="padding:1.75rem;min-height:210px;display:flex;flex-direction:column;justify-content:flex-start">
+              <i class="fab fa-linkedin-in" style="font-size:2rem;color:#fff;background:#0A66C2;padding:.7rem;border-radius:50%"></i>
+              <h4 style="margin:.9rem 0 0;font-size:1.1rem">LinkedIn</h4>
+              <p style="color:var(--color-secondary);margin:.4rem 0 0;font-size:.9rem">Brand partnerships & hiring signals.</p>
+              <p style="color:var(--color-secondary);margin:.25rem 0 0;font-weight:600">/company/studdesigns</p>
+            </a>
+          </div>
+          <div class="reveal" style="max-width:880px;margin:2.25rem auto 0;display:grid;gap:1rem;text-align:left">
+            <h3 style="margin:0" class="stud-accent">Response & Support</h3>
+            <p style="color:var(--color-secondary);margin:0">Typical reply windows: WhatsApp (under 1 hour), Instagram (under 2 hours), Email (same day), LinkedIn (1–2 days). Weekend responses may extend slightly.</p>
+            <p style="color:var(--color-secondary);margin:0">For sizing clarity send: height, weight, fit preference (standard relaxed / extra drape) and a reference tee brand you currently wear.</p>
+            <p style="color:var(--color-secondary);margin:0">Bulk or collaboration inquiries: outline quantity target, timeline and any custom finish requirements (embroidery / label variation).</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">&copy; 2024 STUD Designs</footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+ </html>

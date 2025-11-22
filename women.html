@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>STUD Designs — Women</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="container">
+        <div class="desktop-bar">
+          <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+          </a>
+          <nav class="nav-desktop" aria-label="Primary" style="display:flex;align-items:center;gap:1rem">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="men.html">Men</a>
+            <a class="nav-link" href="women.html">Women</a>
+            <a class="nav-link" href="size-guide.html">Size Guide</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+          </nav>
+        </div>
+        <div class="mobile-bar">
+          <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+          </a>
+          <div style="display:flex;align-items:center;gap:.5rem">
+            <button id="mobile-toggle" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-navigation" aria-expanded="false">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <nav id="mobile-navigation" class="nav-mobile" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="men.html">Men</a>
+          <a class="nav-link" href="women.html">Women</a>
+          <a class="nav-link" href="size-guide.html">Size Guide</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page container">
+        <div class="card reveal" data-product='{"Black":{"fit":"women-fit-black.jpg","fabric":"women-fabric-black.png"},"White":{"fit":"women-fit-white.png","fabric":"women-fabric-white.jpg"},"Heather Grey":{"fit":"women-fit-grey.jpg","fabric":"women-fabric-grey.jpg"}}'>
+          <!-- Moved color swatches to top -->
+          <div style="margin:0 0 1.25rem">
+            <h2 style="margin:0 0 .75rem">The Signature Crew</h2>
+            <p style="margin:0 0 .5rem;font-weight:600">Color: <span class="stud-accent" id="women-selected-color-name">Black</span></p>
+            <div style="display:flex;gap:.65rem;flex-wrap:wrap">
+              <div class="color-swatch selected" data-color="Black" style="background:#000" title="Black"></div>
+              <div class="color-swatch" data-color="White" style="background:#fff;border:1px solid #ddd" title="White"></div>
+              <div class="color-swatch" data-color="Heather Grey" style="background:#808080" title="Heather Grey"></div>
+            </div>
+          </div>
+          <div class="product-gallery medium" style="margin-bottom:1.25rem">
+            <img class="img-fit img-rounded" src="images/women-fit-black.jpg" alt="Side profile fit of Signature Crew in Black" />
+            <img class="img-fabric img-rounded" src="images/women-fabric-black.png" alt="Fabric texture of Signature Crew in Black" />
+          </div>
+          <div>
+            <p style="color:var(--color-secondary);margin:0 0 1rem">Relaxed fluid drape in breathable 200 GSM cotton jersey. Sculpted scooped neck line and subtle crop length enable layered silhouettes without bulk.</p>
+            <p style="color:var(--color-secondary);margin:0 0 1rem">Balanced flow: soft edge seams, lightweight yarn selection, movement-friendly shoulder slope. Designed for effortless transition from studio to street.</p>
+            <p style="color:var(--color-secondary);margin:0 0 1.25rem">Fabric chosen for gentle recovery — maintains silhouette without cling. Low-pill finish for maintained surface quality over repeated wear.</p>
+            <ul style="list-style:none;padding:0;margin:1.25rem 0 1.25rem;display:grid;gap:.5rem">
+              <li><i class="fas fa-tshirt stud-accent" style="margin-right:.5rem"></i>Lightweight 200 GSM jersey</li>
+              <li><i class="fas fa-cut stud-accent" style="margin-right:.5rem"></i>Relaxed drape silhouette</li>
+              <li><i class="fas fa-layer-group stud-accent" style="margin-right:.5rem"></i>Layer-friendly cropped hem</li>
+              <li><i class="fas fa-recycle stud-accent" style="margin-right:.5rem"></i>Soft-touch seam finishing</li>
+            </ul>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap">
+              <a href="size-guide.html" class="btn btn-primary">Size Guide</a>
+              <a href="contact.html" class="btn btn-primary" style="background:var(--color-main);color:var(--bg-main)">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">&copy; 2024 STUD Designs</footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+ </html>

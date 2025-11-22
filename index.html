@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>STUD Designs — Home</title>
+        <meta name="description" content="STUD Designs: minimalist, high-impact apparel engineered for presence. One perfect fit, one perfect material." />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- GSAP & ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+                <header class="header" role="banner">
+                    <div class="container">
+                        <div class="desktop-bar">
+                            <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+                            </a>
+                            <nav class="nav-desktop" aria-label="Primary" style="display:flex;align-items:center;gap:1rem">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="men.html">Men</a>
+                                <a class="nav-link" href="women.html">Women</a>
+                                <a class="nav-link" href="size-guide.html">Size Guide</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                                <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+                            </nav>
+                        </div>
+                        <div class="mobile-bar">
+                            <a href="index.html" class="stud-logo" aria-label="STUD Designs home" style="display:flex;align-items:center;gap:.6rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--bg-accent)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                <div><span style="display:block;font-weight:900">STUD</span><small style="display:block;opacity:.8">Designs</small></div>
+                            </a>
+                            <div style="display:flex;align-items:center;gap:.5rem">
+                                <button id="mobile-toggle" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-navigation" aria-expanded="false">
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <button class="theme-toggle" aria-label="Toggle theme"><i class="theme-icon fas fa-sun" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <nav id="mobile-navigation" class="nav-mobile" aria-label="Primary">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="men.html">Men</a>
+                            <a class="nav-link" href="women.html">Women</a>
+                            <a class="nav-link" href="size-guide.html">Size Guide</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </nav>
+                    </div>
+                </header>
+
+        <main role="main">
+            <section class="hero" style="background:linear-gradient(180deg,rgba(17,24,39,.95),rgba(17,24,39,.85));color:white">
+                <div class="container">
+                    <h1 class="reveal" style="font-size:clamp(2rem,6vw,5rem)"><span class="stud-accent">Engineered</span> for Presence.</h1>
+                    <p class="reveal" style="opacity:.9;margin-top:1rem;max-width:800px;margin-left:auto;margin-right:auto">Minimalist, high-impact apparel. One perfect fit. One perfect material.</p>
+                    <div style="margin-top:1.25rem" class="reveal">
+                        <a href="men.html" class="btn btn-primary">View Collections</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page container" aria-label="Highlights">
+                <div class="card reveal" style="display:grid;gap:1rem">
+                    <h2 class="stud-accent" style="margin:0;font-size:1.25rem">New Arrivals & Philosophy</h2>
+                    <p style="color:var(--color-secondary);margin:0">Seasonal drops engineered for lasting presence. Each release refines pattern balance, fabric density and proportion harmony.</p>
+                    <p style="color:var(--color-secondary);margin:0">We focus on fewer cuts, deeper iteration. Every seam chosen for structural stability and minimal waste yield.</p>
+                    <p style="color:var(--color-secondary);margin:0">Oversized silhouettes built to layer without volume collapse. Neutral palette chosen for versatile rotation and slow trend decay.</p>
+                    <p style="color:var(--color-secondary);margin:0">Ethos: precision, reduction, longevity. Essentials — redefined continuously, not seasonally replaced.</p>
+                </div>
+            </section>
+
+            <!-- Craft and Material Engineering Section -->
+            <section class="page container" aria-label="Craft & Material" style="padding-top:0">
+                <div class="card reveal" style="display:grid;gap:.9rem">
+                    <h2 class="stud-accent" style="margin:0;font-size:1.25rem">Material Engineering</h2>
+                    <p style="color:var(--color-secondary);margin:0">Fiber selection prioritizes staple length and twist stability. This maintains surface integrity while reducing pilling under abrasion and wash cycles.</p>
+                    <p style="color:var(--color-secondary);margin:0">GSM calibration tuned to preserve silhouette without weight fatigue. Men’s 280 GSM for structured drape; Women’s 200 GSM for fluid motion and layer breathability.</p>
+                    <p style="color:var(--color-secondary);margin:0">Panel geometry reduces tension points at shoulder seams — enabling balanced drop without neck distortion over time.</p>
+                    <p style="color:var(--color-secondary);margin:0">All dyes chosen for slow-fade retention; dark tones hold saturation while neutrals maintain tonal consistency under varied lighting.</p>
+                </div>
+            </section>
+
+            <!-- Pattern Development Section -->
+            <section class="page container" aria-label="Pattern Development" style="padding-top:0">
+                <div class="card reveal" style="display:grid;gap:.9rem">
+                    <h2 class="stud-accent" style="margin:0;font-size:1.25rem">Pattern Development</h2>
+                    <p style="color:var(--color-secondary);margin:0">Each revision iteration measures shoulder slope, sleeve drop and hem equilibrium to ensure proportion harmony across size scale.</p>
+                    <p style="color:var(--color-secondary);margin:0">Minimal embellishment strategy emphasizes silhouette and fabric hand — no visual noise, only refined structure.</p>
+                    <p style="color:var(--color-secondary);margin:0">Strategic negative space in torso block prevents billow collapse when layering under outerwear.</p>
+                    <p style="color:var(--color-secondary);margin:0">Fit logic: one core men’s block, one core women’s block — refined continuously instead of resetting every season.</p>
+                </div>
+            </section>
+
+            <!-- Sustainability & Longevity Section -->
+            <section class="page container" aria-label="Sustainability" style="padding-top:0;padding-bottom:1rem">
+                <div class="card reveal" style="display:grid;gap:.9rem">
+                    <h2 class="stud-accent" style="margin:0;font-size:1.25rem">Longevity & Responsibility</h2>
+                    <p style="color:var(--color-secondary);margin:0">Low-waste cutting maps reduce off-cut discard and tighten yield efficiency per roll.</p>
+                    <p style="color:var(--color-secondary);margin:0">Limited production cycles prevent excess inventory, maintaining exclusivity and reducing unsold footprint.</p>
+                    <p style="color:var(--color-secondary);margin:0">Durable fiber blends extend lifecycle — slowing replacement frequency and supporting conscious wardrobe rotation.</p>
+                    <p style="color:var(--color-secondary);margin:0">Repair-first ethos: reinforced seams chosen for structural endurance over temporary aesthetics.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="container">&copy; 2024 STUD Designs. All Rights Reserved.</div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
