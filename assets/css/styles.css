@@ -41,14 +41,12 @@ body{font-family:'Inter',sans-serif;background:var(--bg-main);color:var(--color-
 .menu-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.35);opacity:0;pointer-events:none;z-index:100;transition:opacity .25s ease}
 .menu-backdrop.show{opacity:1;pointer-events:auto}
 body.dark .menu-backdrop{background:rgba(0,0,0,.55)}
-.header{position:sticky;top:0;z-index:60;background:var(--bg-main);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(11,15,22,.06);border-bottom:1px solid var(--color-border)}
-.header{position:sticky;top:0;z-index:60;background:var(--bg-main);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(11,15,22,.06);border-bottom:1px solid var(--color-border);}
+.header{position:sticky;top:0;z-index:120;background:var(--bg-main);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(11,15,22,.06);border-bottom:1px solid var(--color-border)}
 /* Header layout helpers */
 .header .container{position:relative}
 .header-right{display:flex;align-items:center;gap:1rem}
 .header-actions{display:flex;align-items:center;gap:.5rem}
 /* Animated color-changing bar at the very top of header */
-.header{position:sticky;top:0}
 .header::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;border-top-left-radius:2px;border-top-right-radius:2px;background:linear-gradient(90deg,#00A896,#06b6d4,#6366f1,#a855f7,#f59e0b,#ef4444,#00A896);background-size:400% 100%;animation:studColorBar 10s linear infinite}
 @keyframes studColorBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .page{padding:2.5rem 1rem}
