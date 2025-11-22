@@ -132,6 +132,7 @@
           backdrop.addEventListener('click', () => {
             if(nav.classList.contains('open')) closeMenu();
           });
+          backdrop.dataset.bound = 'true';
         } else if(!backdrop.dataset.bound){
           backdrop.addEventListener('click', () => {
             if(nav.classList.contains('open')) closeMenu();
