@@ -51,7 +51,7 @@ body.dark .menu-backdrop{background:rgba(0,0,0,.55)}
 @keyframes studColorBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .page{padding:2.5rem 1rem}
 .hero{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:3rem 1rem}
-.hero h1{font-family:'Oswald',sans-serif;font-weight:800;letter-spacing:.02em;margin:0}
+.hero h1{font-family:'Oswald',sans-serif;font-weight:800;letter-spacing:.02em;margin:0;font-size:clamp(2rem,6vw,5rem)}
 .stud-accent{color:var(--bg-accent)}
 .btn{display:inline-block;padding:.85rem 1.25rem;border-radius:.6rem;font-weight:700;cursor:pointer}
 .btn-primary{background:var(--bg-accent);color:var(--color-main);box-shadow:0 8px 30px rgba(0,168,150,.12);transition:transform .28s,box-shadow .28s}
